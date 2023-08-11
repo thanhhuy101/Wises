@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wises/app/constants/constants.dart';
 
-import '../constants/constants.dart';
+
 
 
 class BottomBarActiveItem extends StatelessWidget {

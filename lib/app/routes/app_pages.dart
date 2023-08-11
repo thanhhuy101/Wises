@@ -1,5 +1,11 @@
 import 'package:get/get.dart';
+import 'package:wises/app/models/buy_item_model.dart';
 import 'package:wises/app/models/course_model.dart';
+import 'package:wises/app/models/purchase_item_model.dart';
+import 'package:wises/app/modules/shop/bindings/buy_binding.dart';
+import 'package:wises/app/modules/shop/bindings/purchase_binding.dart';
+import 'package:wises/app/modules/shop/views/components/buy_item.dart';
+import 'package:wises/app/modules/shop/views/components/purchase_item.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
@@ -51,10 +57,27 @@ class AppPages {
           binding: StreakBinding(),
         ),
         GetPage(
-          name: Routes.SHOP,
-          page: () => const ShopView(),
-          binding: ShopBinding(),
-        ),
+            name: Routes.SHOP,
+            page: () => ShopView(
+                  purchaseitemList: purchaseitemList,
+                ),
+            binding: ShopBinding(),
+            children: [
+              GetPage(
+                name: Routes.PURCHASE,
+                page: () => PurchaseView(
+                  purchaseitemList: purchaseitemList,
+                ),
+                binding: PuchaseBinding(),
+              ),
+              GetPage(
+                name: Routes.BUY,
+                page: () => BuyView(
+                  buyitemList: buyitemList,
+                ),
+                binding: BuyBinding(),
+              ),
+            ]),
         GetPage(
           name: Routes.PROFILE,
           page: () => ProfileView(

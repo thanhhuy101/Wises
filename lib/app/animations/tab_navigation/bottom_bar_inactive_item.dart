@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wises/app/constants/constants.dart';
 
-import '../constants/constants.dart';
+
 
 /// Class to generate the inactive icon on bottom bar
 class BottomBarInActiveItem extends StatelessWidget {

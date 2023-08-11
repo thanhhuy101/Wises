@@ -48,4 +48,53 @@ List<CourseModel> itemList = [
         "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
     logo: "assets/images/icon_reactjs.png",
   ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
+  CourseModel(
+    title: "ReactJS",
+    image: "assets/images/reactjs.png",
+    content:
+        "Khóa học giúp bạn quản lý form hiệu quả với React Hook Form, quản lý state với redux toolkit ,hiểu được cách tổ chức files và folders như thế nào",
+    logo: "assets/images/icon_reactjs.png",
+  ),
 ];

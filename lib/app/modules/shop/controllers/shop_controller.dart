@@ -5,4 +5,10 @@ class ShopController extends GetxController {
   void onClose() {
     super.onClose();
   }
+
+  RxInt selectedIndex = 0.obs;
+
+  void setSelectedIndex(int index) {
+    selectedIndex.value = index;
+  }
 }

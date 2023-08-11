@@ -1,6 +1,9 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:wises/app/animations/tab_navigation/notch_bottom_bar.dart';
+import 'package:wises/app/models/bottom_bar_item_model.dart';
 import 'package:wises/app/models/course_model.dart';
+import 'package:wises/app/models/purchase_item_model.dart';
 import 'package:wises/app/modules/home/views/home_view.dart';
 import 'package:wises/app/modules/league/views/league_view.dart';
 import 'package:wises/app/modules/profile/views/profile_view.dart';
@@ -8,7 +11,6 @@ import 'package:wises/app/modules/shop/views/shop_view.dart';
 import 'package:wises/app/modules/streak/views/streak_view.dart';
 // ignore: unused_import
 
-import '../../../animations/animated.dart';
 // ignore: unnecessary_import
 import 'package:get/get.dart';
 // ignore: unnecessary_import
@@ -33,7 +35,9 @@ class TabNavigationView extends GetView<NotchBottomBarController> {
     const HomeView(),
     const LeagueView(),
     const StreakView(),
-    const ShopView(),
+    ShopView(
+      purchaseitemList: purchaseitemList,
+    ),
     ProfileView(
       itemList: itemList,
     ),
@@ -52,7 +56,7 @@ class TabNavigationView extends GetView<NotchBottomBarController> {
       bottomNavigationBar: (bottomBarPages.length <= maxCount)
           ? AnimatedNotchBottomBar(
               notchBottomBarController: _controller,
-              color: Color.fromARGB(255, 16, 82, 174),
+              color: const Color.fromARGB(255, 16, 82, 174),
               showLabel: true,
               notchColor: Colors.white,
               removeMargins: true,
