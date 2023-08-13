@@ -75,7 +75,7 @@ class Body extends GetView<BodyController> {
                                       margin:
                                           const EdgeInsets.fromLTRB(0, 0, 0, 0),
                                       child: Text(
-                                        course.title,
+                                        course.name,
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
                                           fontSize: 14,
@@ -108,7 +108,7 @@ class Body extends GetView<BodyController> {
                                   maxWidth: 293,
                                 ),
                                 child: Text(
-                                  course.content,
+                                  course.description,
                                   maxLines: 3,
                                   style: const TextStyle(
                                     fontSize: 12,
