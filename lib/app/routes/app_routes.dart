@@ -21,6 +21,7 @@ abstract class Routes {
   static const PURCHASE = _Paths.PURCHASE;
   // ignore: constant_identifier_names
   static const BUY = _Paths.BUY;
+  static const COURSE = _Paths.COURSE;
 }
 
 abstract class _Paths {
@@ -43,4 +44,6 @@ abstract class _Paths {
   static const PURCHASE = '/shop/purchase';
   // ignore: constant_identifier_names
   static const BUY = '/shop/buy';
+  // ignore: constant_identifier_names
+  static const COURSE = '/course';
 }

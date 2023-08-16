@@ -1,12 +1,10 @@
 import 'package:get/get.dart';
-import 'package:wises/app/models/buy_item_model.dart';
-import 'package:wises/app/models/course_model.dart';
-import 'package:wises/app/models/purchase_item_model.dart';
-import 'package:wises/app/modules/shop/bindings/buy_binding.dart';
-import 'package:wises/app/modules/shop/bindings/purchase_binding.dart';
-import 'package:wises/app/modules/shop/views/components/buy_item.dart';
-import 'package:wises/app/modules/shop/views/components/purchase_item.dart';
 
+import '../models/buy_item_model.dart';
+import '../models/course_model.dart';
+import '../models/purchase_item_model.dart';
+import '../modules/course/bindings/course_binding.dart';
+import '../modules/course/views/course_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/league/bindings/league_binding.dart';
@@ -15,9 +13,14 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
+import '../modules/shop/bindings/buy_binding.dart';
+import '../modules/shop/bindings/purchase_binding.dart';
 import '../modules/shop/bindings/shop_binding.dart';
+import '../modules/shop/views/components/buy_item.dart';
+import '../modules/shop/views/components/purchase_item.dart';
 import '../modules/shop/views/shop_view.dart';
 import '../modules/streak/bindings/streak_binding.dart';
+import '../modules/streak/controllers/streak_controller.dart';
 import '../modules/streak/views/streak_view.dart';
 import '../modules/tab_navigation/bindings/tab_navigation_binding.dart';
 import '../modules/tab_navigation/views/tab_navigation_view.dart';
@@ -53,7 +56,7 @@ class AppPages {
         ),
         GetPage(
           name: Routes.STREAK,
-          page: () => const StreakView(),
+          page: () => StreakView(Get.put(StreakController())),
           binding: StreakBinding(),
         ),
         GetPage(
@@ -86,6 +89,13 @@ class AppPages {
           binding: ProfileBinding(),
         ),
       ],
+    ),
+    GetPage(
+      name: _Paths.COURSE,
+      page: () => CourseView(
+        itemList: itemList,
+      ),
+      binding: CourseBinding(),
     ),
   ];
 }

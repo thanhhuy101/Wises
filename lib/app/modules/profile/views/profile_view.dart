@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:wises/app/models/course_model.dart';
 import 'package:wises/app/modules/profile/views/components/body.dart';
 import 'package:wises/app/modules/profile/views/components/logoutbtn.dart';
-import 'package:wises/app/modules/profile/views/components/navbar.dart';
+import 'package:wises/app/modules/profile/views/components/navbar_profile.dart';
 import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
