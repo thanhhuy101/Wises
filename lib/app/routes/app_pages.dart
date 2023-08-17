@@ -5,6 +5,10 @@ import '../models/course_model.dart';
 import '../models/purchase_item_model.dart';
 import '../modules/course/bindings/course_binding.dart';
 import '../modules/course/views/course_view.dart';
+import '../modules/fail/bindings/fail_binding.dart';
+import '../modules/fail/views/fail_view.dart';
+import '../modules/finish/bindings/finish_binding.dart';
+import '../modules/finish/views/finish_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/league/bindings/league_binding.dart';
@@ -96,6 +100,16 @@ class AppPages {
         itemList: itemList,
       ),
       binding: CourseBinding(),
+    ),
+    GetPage(
+      name: _Paths.FINISH,
+      page: () => const FinishView(),
+      binding: FinishBinding(),
+    ),
+    GetPage(
+      name: _Paths.FAIL,
+      page: () => const FailView(),
+      binding: FailBinding(),
     ),
   ];
 }

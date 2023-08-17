@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wises/app/models/course_model.dart';
 import 'package:wises/app/modules/course/views/course_view.dart';
+import 'package:wises/app/modules/fail/views/fail_view.dart';
+import 'package:wises/app/modules/finish/views/finish_view.dart';
 import 'package:wises/app/modules/home/controllers/top_controller.dart';
 
 class TopView extends GetView<TopController> {
@@ -93,6 +95,8 @@ class TopView extends GetView<TopController> {
                     Get.to(() => CourseView(
                           itemList: itemList,
                         ));
+                    //Get.to(() => const FinishView());
+                    //Get.to(() => const FailView());
                   },
                   child: Container(
                     margin: const EdgeInsets.fromLTRB(0, 2, 0, 0),
