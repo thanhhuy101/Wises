@@ -11,19 +11,17 @@ class ProfileView extends GetView<ProfileController> {
   final List<CourseModel> itemList;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          const NavBar(),
-          Body(
-            itemList: itemList,
-          ),
-          const SizedBox(
-            height: 40,
-          ),
-          LogoutBtn(),
-        ],
-      ),
+    return Column(
+      children: [
+        const NavBar(),
+        Body(
+          itemList: itemList,
+        ),
+        const SizedBox(
+          height: 40,
+        ),
+        LogoutBtn(),
+      ],
     );
   }
 }

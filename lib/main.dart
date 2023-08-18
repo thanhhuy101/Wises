@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:wises/app/modules/home/views/components/lession_view.dart';
+import 'package:wises/app/modules/home/views/components/session_view.dart';
 import 'package:wises/app/modules/login/views/login_view.dart';
 import 'package:wises/app/routes/app_pages.dart';
 
@@ -23,6 +25,26 @@ class MyApp extends StatelessWidget {
       initialRoute: Routes.LOGIN,
       getPages: AppPages.routes,
       home: LoginView(),
+      // onGenerateRoute: (settings) {
+      //   if (settings.name == '/') {
+      //     return GetPageRoute(
+      //       page: () => SessionView(0),
+      //     );
+      //   } else if (settings.name!.startsWith('/session')) {
+      //     final sessionIndex = int.parse(settings.name!.split('/')[2]);
+      //     return GetPageRoute(
+      //       page: () => SessionView(sessionIndex),
+      //     );
+      //   } else if (settings.name!.startsWith('/lesson')) {
+      //     final parts = settings.name!.split('/');
+      //     final sessionIndex = int.parse(parts[2]);
+      //     final lessonIndex = int.parse(parts[3]);
+      //     return GetPageRoute(
+      //       page: () => LessonView(sessionIndex, lessonIndex),
+      //     );
+      //   }
+      //   return null;
+      // },
     );
   }
 }

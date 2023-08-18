@@ -77,12 +77,12 @@ class TopCourseView extends GetView<TopCourseController> {
                 },
                 child: Container(
                   // iconscancel24px39j (2119:254790)
-                  margin: const EdgeInsets.fromLTRB(0, 1.42, 10, 0),
+                  margin: const EdgeInsets.fromLTRB(0, 1, 10, 0),
                   width: 25.03,
                   height: 24.17,
                   child: const Icon(
                     Icons.cancel_outlined,
-                    size: 30,
+                    size: 28,
                     color: Color.fromARGB(255, 16, 82, 174),
                   ),
                 ),

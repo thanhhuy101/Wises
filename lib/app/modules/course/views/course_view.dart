@@ -17,7 +17,7 @@ class CourseView extends GetView<CourseController> {
         children: [
           TopCourseView(),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const Divider(
             color: Color.fromARGB(255, 16, 82, 174),
@@ -26,7 +26,7 @@ class CourseView extends GetView<CourseController> {
             height: 10,
           ),
           const Text(
-            "Availablecourses",
+            "Available courses",
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Color.fromARGB(255, 16, 82, 174),

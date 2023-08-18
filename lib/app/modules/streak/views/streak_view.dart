@@ -4,7 +4,7 @@ import '../controllers/streak_controller.dart';
 
 class StreakView extends GetView<StreakController> {
   final StreakController _controller = Get.find<StreakController>();
-  StreakView(StreakController put);
+  StreakView(StreakController put, {super.key});
 
   // RxDouble _imageHeight = 200.0.obs; // Using RxDouble from GetX
 

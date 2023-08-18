@@ -13,6 +13,7 @@ class ShopView extends GetView<ShopController> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
     return Container(
       child: DefaultTabController(
         length: 2, // Số lượng tab

@@ -25,7 +25,12 @@ abstract class Routes {
   static const COURSE = _Paths.COURSE;
   // ignore: constant_identifier_names
   static const FINISH = _Paths.FINISH;
+  // ignore: constant_identifier_names
   static const FAIL = _Paths.FAIL;
+  // ignore: constant_identifier_names
+  static const SESSION = _Paths.SESSION;
+  // ignore: constant_identifier_names
+  static const LESSON = _Paths.LESSON;
 }
 
 abstract class _Paths {
@@ -54,4 +59,8 @@ abstract class _Paths {
   static const FINISH = '/finish';
   // ignore: constant_identifier_names
   static const FAIL = '/fail';
+  // ignore: constant_identifier_names
+  static const SESSION = '/session';
+  // ignore: constant_identifier_names
+  static const LESSON = '/lesson';
 }

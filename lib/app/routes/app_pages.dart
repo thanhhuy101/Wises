@@ -1,4 +1,9 @@
 import 'package:get/get.dart';
+import 'package:wises/app/modules/home/bindings/lesson_binding.dart';
+import 'package:wises/app/modules/home/bindings/session_binding.dart';
+import 'package:wises/app/modules/home/controllers/curriculum_controller.dart';
+import 'package:wises/app/modules/home/views/components/lession_view.dart';
+import 'package:wises/app/modules/home/views/components/session_view.dart';
 
 import '../models/buy_item_model.dart';
 import '../models/course_model.dart';
@@ -50,8 +55,22 @@ class AppPages {
       children: [
         GetPage(
           name: Routes.HOME,
-          page: () => const HomeView(),
+          page: () => HomeView(),
           binding: HomeBinding(),
+          children: [
+            GetPage(
+              name: Routes.SESSION,
+              page: () => SessionView(),
+              binding: SessionBinding(),
+              children: [
+                GetPage(
+                  name: Routes.LESSON,
+                  page: () => LessonView(),
+                  binding: LessonBinding(),
+                ),
+              ],
+            ),
+          ],
         ),
         GetPage(
           name: Routes.LEAGUE,
