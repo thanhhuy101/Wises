@@ -12,4 +12,6 @@ class Test {
     required this.name,
     required this.description,
   });
+
+  static fromJson(Map<String, dynamic> index) {}
 }

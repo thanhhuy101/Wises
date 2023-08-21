@@ -75,7 +75,7 @@ class AppPages {
         ),
         GetPage(
           name: Routes.LEAGUE,
-          page: () => const LeagueView(),
+          page: () => LeagueView(),
           binding: LeagueBinding(),
         ),
         GetPage(

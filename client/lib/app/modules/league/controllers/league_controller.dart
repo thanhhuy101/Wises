@@ -15,7 +15,7 @@ class LeagueController extends GetxController {
   Future<void> fetchCourses() async {
     try {
       final response =
-          await http.get(Uri.parse('http://localhost:8080/courses'));
+          await http.get(Uri.parse('http://192.168.136.67:8080/courses'));
       if (response.statusCode == 200) {
         final List<dynamic> responseData = json.decode(response.body);
         test.value = responseData
@@ -28,11 +28,11 @@ class LeagueController extends GetxController {
             .toList();
       } else {
         // Handle error
-        Get.snackbar('Error', 'API error: ${response.statusCode}');
+        print('API error: ${response.statusCode}');
       }
     } catch (e) {
       // Handle error
-      Get.snackbar('Error', 'Error fetching data: $e');
+      print('Error fetching data: $e');
     }
   }
 }

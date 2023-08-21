@@ -36,7 +36,7 @@ class TabNavigationView extends GetView<NotchBottomBarController> {
 
   final List<Widget> bottomBarPages = [
     const HomeView(),
-    const LeagueView(),
+    LeagueView(),
     StreakView(Get.put(StreakController())),
     ShopView(
       purchaseitemList: purchaseitemList,
