@@ -6,6 +6,7 @@ import 'package:wises/app/models/course_model.dart';
 import 'package:wises/app/models/purchase_item_model.dart';
 import 'package:wises/app/modules/home/controllers/curriculum_controller.dart';
 import 'package:wises/app/modules/home/views/home_view.dart';
+import 'package:wises/app/modules/league/controllers/league_controller.dart';
 import 'package:wises/app/modules/league/views/league_view.dart';
 import 'package:wises/app/modules/profile/views/profile_view.dart';
 import 'package:wises/app/modules/shop/views/shop_view.dart';
@@ -34,7 +35,7 @@ class TabNavigationView extends GetView<NotchBottomBarController> {
   // }
 
   final List<Widget> bottomBarPages = [
-    HomeView(),
+    const HomeView(),
     const LeagueView(),
     StreakView(Get.put(StreakController())),
     ShopView(

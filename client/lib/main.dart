@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wises/app/modules/home/views/components/lession_view.dart';
-import 'package:wises/app/modules/home/views/components/session_view.dart';
 import 'package:wises/app/modules/login/views/login_view.dart';
 import 'package:wises/app/routes/app_pages.dart';
 
