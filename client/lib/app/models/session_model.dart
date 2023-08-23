@@ -28,4 +28,19 @@ List<Session> itemSession = [
     Lesson('Thư viện requests và web scraping', 0.0),
     Lesson('Xây dựng ứng dụng console đơn giản', 0.0),
   ]),
+  Session('Ứng dụng thực tế với Python', [
+    Lesson('Xử lý tệp tin và thư mục', 0.0),
+    Lesson('Thư viện requests và web scraping', 0.0),
+    Lesson('Xây dựng ứng dụng console đơn giản', 0.0),
+  ]),
+  Session('Ứng dụng thực tế với Python', [
+    Lesson('Xử lý tệp tin và thư mục', 0.0),
+    Lesson('Thư viện requests và web scraping', 0.0),
+    Lesson('Xây dựng ứng dụng console đơn giản', 0.0),
+  ]),
+  Session('Ứng dụng thực tế với Python', [
+    Lesson('Xử lý tệp tin và thư mục', 0.0),
+    Lesson('Thư viện requests và web scraping', 0.0),
+    Lesson('Xây dựng ứng dụng console đơn giản', 0.0),
+  ]),
 ];

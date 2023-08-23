@@ -10,6 +10,8 @@ class SessionView extends GetView<SessionController> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
+      height: 600,
       child: SingleChildScrollView(
         child: GetBuilder<SessionController>(
           init: SessionController(
@@ -20,7 +22,7 @@ class SessionView extends GetView<SessionController> {
                 return Column(
                   children: [
                     Container(
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(12, 12, 0, 0),
                       width: double.infinity,
                       height: 50,
                       decoration: const BoxDecoration(
