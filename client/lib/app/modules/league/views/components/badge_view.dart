@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:wises/app/models/badge_model.dart';
 import 'package:wises/app/modules/league/controllers/badge_controller.dart';
 
 class BadgeView extends StatelessWidget {
+  // ignore: unused_field
   final BadgeController _controller = Get.put(BadgeController());
 
   @override
@@ -12,11 +12,11 @@ class BadgeView extends StatelessWidget {
     return Container(
       color: Colors.white, // Màu nền container
       child: GetBuilder<BadgeController>(
-        builder: (_controller) {
+        builder: (controller) {
           return SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: _controller.badges.map((badge) {
+              children: controller.badges.map((badge) {
                 return _buildBadge(badge);
               }).toList(),
             ),

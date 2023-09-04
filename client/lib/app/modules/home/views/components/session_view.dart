@@ -69,7 +69,8 @@ class SessionView extends GetView<SessionController> {
                             ],
                           ),
                           onTap: () {
-                            Get.to(() => LessonView());
+                            Get.to(() => const LessonView());
+                            // Get.to(() =>  const TestView());
                           },
                         );
                       }).toList(),

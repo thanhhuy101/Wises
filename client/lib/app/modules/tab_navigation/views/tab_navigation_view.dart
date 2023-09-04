@@ -4,9 +4,9 @@ import 'package:wises/app/animations/tab_navigation/notch_bottom_bar.dart';
 import 'package:wises/app/models/bottom_bar_item_model.dart';
 import 'package:wises/app/models/course_model.dart';
 import 'package:wises/app/models/purchase_item_model.dart';
-import 'package:wises/app/modules/home/controllers/curriculum_controller.dart';
+//import 'package:wises/app/modules/home/controllers/curriculum_controller.dart';
 import 'package:wises/app/modules/home/views/home_view.dart';
-import 'package:wises/app/modules/league/controllers/league_controller.dart';
+//import 'package:wises/app/modules/league/controllers/league_controller.dart';
 import 'package:wises/app/modules/league/views/league_view.dart';
 import 'package:wises/app/modules/profile/views/profile_view.dart';
 import 'package:wises/app/modules/shop/views/shop_view.dart';
@@ -36,7 +36,7 @@ class TabNavigationView extends GetView<NotchBottomBarController> {
 
   final List<Widget> bottomBarPages = [
     const HomeView(),
-    LeagueView(),
+    const LeagueView(),
     StreakView(Get.put(StreakController())),
     ShopView(
       purchaseitemList: purchaseitemList,

@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
 import 'package:wises/app/modules/home/bindings/lesson_binding.dart';
 import 'package:wises/app/modules/home/bindings/session_binding.dart';
-import 'package:wises/app/modules/home/controllers/curriculum_controller.dart';
+//import 'package:wises/app/modules/home/controllers/curriculum_controller.dart';
 import 'package:wises/app/modules/home/views/components/lession_view.dart';
 import 'package:wises/app/modules/home/views/components/session_view.dart';
-import 'package:wises/app/modules/league/controllers/league_controller.dart';
+//import 'package:wises/app/modules/league/controllers/league_controller.dart';
 
 import '../models/buy_item_model.dart';
 import '../models/course_model.dart';

@@ -6,6 +6,7 @@ import 'package:wises/app/modules/league/controllers/user_controller.dart';
 class UserView extends GetWidget<UserController> {
   UserView({super.key});
 
+  // ignore: unused_field
   final UserController _controller = Get.put(UserController());
 
   @override

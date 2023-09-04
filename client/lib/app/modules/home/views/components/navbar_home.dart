@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wises/app/models/course_model.dart';
 import 'package:wises/app/modules/course/views/course_view.dart';
-import 'package:wises/app/modules/fail/views/fail_view.dart';
-import 'package:wises/app/modules/finish/views/finish_view.dart';
-import 'package:wises/app/modules/home/controllers/top_controller.dart';
+// import 'package:wises/app/modules/fail/views/fail_view.dart';
+// import 'package:wises/app/modules/finish/views/finish_view.dart';
+import 'package:wises/app/modules/home/controllers/navbar_home_controller.dart';
 
 class TopView extends GetView<TopController> {
   const TopView({Key? key}) : super(key: key);
